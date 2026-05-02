@@ -10,7 +10,6 @@ struct Account {
 struct Account accounts[100];
 int count = 0;
 
-// Create Account
 void createAccount() {
     printf("\nEnter Account Number: ");
     scanf("%d", &accounts[count].accNo);
@@ -25,7 +24,7 @@ void createAccount() {
     printf("Account Created Successfully!\n");
 }
 
-// Deposit Money
+
 void deposit() {
     int accNo;
     float amount;
@@ -45,7 +44,7 @@ void deposit() {
     printf("Account Not Found!\n");
 }
 
-// Withdraw Money
+
 void withdraw() {
     int accNo;
     float amount;
@@ -69,7 +68,6 @@ void withdraw() {
     printf("Account Not Found!\n");
 }
 
-// Check Balance
 void checkBalance() {
     int accNo;
     printf("\nEnter Account Number: ");
@@ -84,7 +82,7 @@ void checkBalance() {
     printf("Account Not Found!\n");
 }
 
-// Display All Accounts
+
 void displayAccounts() {
     printf("\n--- Account Details ---\n");
     for(int i = 0; i < count; i++) {
@@ -95,7 +93,7 @@ void displayAccounts() {
     }
 }
 
-// Main Menu
+
 int main() {
     int choice;
 
